@@ -1,0 +1,32 @@
+{
+  "name": "sc-moneyfit-recommendations-service-javascript-sdk",
+  "version": "0.0.1",
+  "description": "Sharecare MoneyFit Recommendations Service JavaScript SDK",
+  "main": "dist/MoneyFitRecommendationsServiceSDK.js",
+  "module": "sdk/MoneyFitRecommendationsServiceSDK.js",
+  "scripts": {
+    "build-static": "gulp",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.2",
+    "babel-loader": "^6.4.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.4.0",
+    "del": "^2.2.2",
+    "eslint-plugin-babel": "^4.1.1",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-help": "^1.6.1",
+    "path": "^0.12.7",
+    "require-dir": "^0.3.1",
+    "run-sequence": "^1.2.2",
+    "source-map-support": "^0.4.14",
+    "webpack": "^2.4.1"
+  }
+}
