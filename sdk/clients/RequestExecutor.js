@@ -39,13 +39,13 @@ export default class RequestExecutor {
                 } else {
                     responseDTO = this.handleGenericFailedResponse(err);
                 }
-                _logger.get(this)('MoneyFitRecommendationsServiceSDK Logger: DTO Error -> ', err);
+                _logger.get(this)('MoneyFitRecommendationsServiceSDK Logger: DTO Error -> ', responseDTO);
                 reject(responseDTO);
             });
         } catch (err) {
             _logger.get(this)('MoneyFitRecommendationsServiceSDK Logger: Raw Error -> ', err);
             responseDTO = this.handleGenericFailedResponse(err);
-            _logger.get(this)('MoneyFitRecommendationsServiceSDK Logger: DTO Error -> ', err);
+            _logger.get(this)('MoneyFitRecommendationsServiceSDK Logger: DTO Error -> ', erresponseDTOr);
             reject(responseDTO);
         }
     }
@@ -67,13 +67,13 @@ export default class RequestExecutor {
                 } else {
                     responseDTO = this.handleGenericFailedResponse(err);
                 }
-                _logger.get(this)('MoneyFitRecommendationsServiceSDK Logger: DTO Error -> ', err);
+                _logger.get(this)('MoneyFitRecommendationsServiceSDK Logger: DTO Error -> ', responseDTO);
                 reject(responseDTO);
             });
         } catch (err) {
             _logger.get(this)('MoneyFitRecommendationsServiceSDK Logger: Raw Error -> ', err);
             responseDTO = this.handleGenericFailedResponse(err);
-            _logger.get(this)('MoneyFitRecommendationsServiceSDK Logger: DTO Error -> ', err);
+            _logger.get(this)('MoneyFitRecommendationsServiceSDK Logger: DTO Error -> ', responseDTO);
             reject(responseDTO);
         }
     }
