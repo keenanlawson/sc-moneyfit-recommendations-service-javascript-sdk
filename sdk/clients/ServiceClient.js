@@ -9,6 +9,10 @@ export default class ServiceClient {
         this.requestBuilder = new RequestBuilder();
     }
 
+    debug(logger) {
+        _logger.set(this, logger);
+    }
+
     sanitizeTokenTypeAndToken(serviceAuthentication, userId) {
         if(!userId) {
             throw new ServiceException("No user id found");

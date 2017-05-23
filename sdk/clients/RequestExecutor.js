@@ -11,6 +11,10 @@ export default class RequestExecutor {
 
     constructor() {}
 
+    debug(logger) {
+        _logger.set(this, logger);
+    }
+
     /**
      *
      * @param {Promise} promise
