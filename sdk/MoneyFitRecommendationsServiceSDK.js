@@ -24,7 +24,8 @@ let _pathname = new WeakMap();
 let _baseUrl = new WeakMap();
 
 const RecommendationTypes = Object.freeze({
-    SCORE: 'moneyfitScore',
+    SCORE: 'score',
+    MONEYFITSCORE: 'moneyfitScore',
     LIQUIDITY: 'liquidity',
     SAVINGS: 'savings',
     DEBT_RATIO: 'debtRatio',
