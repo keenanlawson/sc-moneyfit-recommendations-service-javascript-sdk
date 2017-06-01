@@ -1,9 +1,15 @@
 import TokenType from './TokenType';
 import request from 'request';
 
+let _logger = new WeakMap();
+
 export default class RequestBuilder {
 
     constructor() {}
+
+    debug(logger) {
+        _logger.set(this, logger);
+    }
 
     buildHttpHeader(tokenType, token) {
         return {
@@ -34,6 +40,7 @@ export default class RequestBuilder {
             requestOptions.json = options.json;
         }
         return new Promise((resolve, reject) => {
+            _logger.get(this)('MoneyFitRecommendationsServiceSDK Logger: Request Options -> ', requestOptions);
             request(requestOptions, (err, response, body) => {
                 if (err) { reject(err); }
                 else { resolve(body); }

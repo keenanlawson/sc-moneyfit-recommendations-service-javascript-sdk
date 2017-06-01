@@ -11,6 +11,7 @@ export default class ServiceClient {
 
     debug(logger) {
         _logger.set(this, logger);
+        this.requestBuilder.debug(_logger.get(this));
     }
 
     sanitizeTokenTypeAndToken(serviceAuthentication, userId) {
