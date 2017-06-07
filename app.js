@@ -75,7 +75,7 @@ const getServiceAuth = (authResponse) => {
 
 const getScoreSummary = (serviceAuth) => {
     return new Promise((resolve, reject) => {
-        _SDK.getScoreSummary(serviceAuth, serviceAuth.getUserId())
+        _SDK.getRecommendationSummary(serviceAuth, serviceAuth.getUserId(), 'life_insurance')
             .then((response) => {
                 console.log('getScoreSummary SUCCESS: ', response);
                 resolve(response.data);
